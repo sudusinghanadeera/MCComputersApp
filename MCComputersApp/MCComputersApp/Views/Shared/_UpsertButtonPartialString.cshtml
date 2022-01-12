@@ -1,0 +1,11 @@
+﻿@model string
+<div class="form-group row">
+    <div class="col-6 col-sm-4 col-lg-4 offset-sm-4 offset-lg-4">
+        <button type="submit" class="btn btn-primary form-control">
+            @(!string.IsNullOrWhiteSpace(Model)? "Update": "Create")
+        </button>
+    </div>
+    <div class="col-6 col-sm-4 col-lg-4">
+        <a asp-action="Index" class="btn btn-info form-control">Back to List</a>
+    </div>
+</div>

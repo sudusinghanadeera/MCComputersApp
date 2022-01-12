@@ -60,6 +60,9 @@ namespace MCComputersApp
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{area=Admin}/{controller=Product}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
             });
         }
