@@ -12,6 +12,7 @@ namespace MCComputersApp.Model
         public int Id { get; set; }
 
         public DateTime Date { get; set; }
+
         public decimal Discount { get; set; }
       
         public decimal Total { get; set; }

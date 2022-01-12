@@ -15,5 +15,9 @@ namespace MCComputersApp.Data
         }
 
         public DbSet<Product> Product { get; set; }
+
+        public DbSet<Transaction> Transaction { get; set; }
+
+        public DbSet<TransactionItem> TransactionItem { get; set; }
     }
 }
